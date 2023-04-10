@@ -3,12 +3,28 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
+}
+
+.App-logo-png {
+  width: 40px;
+  height: 40px;
+}
+
+.App-logo-react-svg {
+  width: 40px;
+  height: 40px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
+    /* animation: App-logo-spin infinite 20s linear; */
+  }
+  .App-logo-png {
+    animation: App-logo-spin infinite 20s linear;
+  }
+  .App-logo-react-svg {
     animation: App-logo-spin infinite 20s linear;
   }
 }

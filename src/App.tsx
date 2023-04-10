@@ -1,12 +1,22 @@
-import React from 'react';
 import logo from './logo.svg';
+import logoPng from './logo192.png';
 import './App.css';
+import { ReactSVG } from "react-svg";
+
+
+import HtmlToCanvas from './capturers/HtmlToCanvas';
+import DomToImage from './capturers/DomToImage';
+
+
+import ReportModal from './components/ReportModal';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <img src={logoPng} className="App-logo-png" alt="logo" />
+        <ReactSVG className='App-logo-react-svg' src={logo} />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -18,6 +28,9 @@ function App() {
         >
           Learn React
         </a>
+        <HtmlToCanvas />
+        <DomToImage />
+        <ReportModal />
       </header>
     </div>
   );
