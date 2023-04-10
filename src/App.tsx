@@ -7,6 +7,8 @@ import { ReactSVG } from "react-svg";
 import HtmlToCanvas from './capturers/HtmlToCanvas';
 import DomToImage from './capturers/DomToImage';
 import HtmlToImage from './capturers/HtmlToImage';
+import GetDisplayMedia from './capturers/GetDisplayMedia';
+import WebcamComponent from './capturers/WebcamComponent';
 
 import ReportModal from './components/ReportModal';
 
@@ -28,11 +30,13 @@ function App() {
         >
           Learn React
         </a>
-        <HtmlToCanvas />
-        <DomToImage />
-        <HtmlToImage />
-        <ReportModal />
       </header>
+      <HtmlToCanvas />
+      <DomToImage />
+      <HtmlToImage />
+      <GetDisplayMedia />
+      <WebcamComponent />
+      <ReportModal />
     </div>
   );
 }
