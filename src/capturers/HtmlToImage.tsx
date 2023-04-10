@@ -4,8 +4,7 @@ import { CaptureContext } from '../contexts/CaptureContext';
 import { ModalContext } from '../contexts/ModalContext';
 
 const filterElement = (node:any) => {
-  const exclusionClasses = ['App-link'];
-  return !exclusionClasses.some((classname) => node.classList?.contains(classname));
+  return (node.tagName !== 'VIDEO');
 }
 
 export default function DomToImage() {
@@ -78,7 +77,7 @@ export default function DomToImage() {
       <h5>HTML to Image</h5>
       <button onClick={() => handleCapture('png')}>Capture by html-to-image to PNG</button>
       <button onClick={() => handleCapture('jpeg')}>Capture by html-to-image to JPEG (95% quality)</button>
-      <button onClick={() => handleCapture('svg')}>Capture by html-to-image to SVG (exclude .App-link elements)</button>
+      <button onClick={() => handleCapture('svg')}>Capture by html-to-image to SVG (exclude video tags)</button>
       <button onClick={() => handleCapture('canvas')}>Capture by html-to-image to canvas</button>
     </div>
   );

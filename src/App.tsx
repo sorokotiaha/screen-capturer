@@ -3,7 +3,6 @@ import logoPng from './logo192.png';
 import './App.css';
 import { ReactSVG } from "react-svg";
 
-
 import HtmlToCanvas from './capturers/HtmlToCanvas';
 import DomToImage from './capturers/DomToImage';
 import HtmlToImage from './capturers/HtmlToImage';
@@ -16,10 +15,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <img src={logoPng} className="App-logo-png" alt="logo" />
-        <ReactSVG className='App-logo-react-svg' src={logo} />
-        <p>
+        {/* <WebcamComponent /> */}
+        {/* <img src={logoPng} className="App-logo-png" alt="logo" />
+        <ReactSVG className='App-logo-react-svg' src={logo} /> */}
+        <p className="App-text">
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <a
@@ -35,7 +34,7 @@ function App() {
       <DomToImage />
       <HtmlToImage />
       <GetDisplayMedia />
-      <WebcamComponent />
+
       <ReportModal />
     </div>
   );

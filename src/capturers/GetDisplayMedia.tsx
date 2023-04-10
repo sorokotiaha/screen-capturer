@@ -34,7 +34,7 @@ export default function GetDisplayMedia() {
             screen sharing. Video is rendered and then page screenshot
             is captured from the video.
         </p> */}
-        <video width="480" height="270" controls >
+        <video width="480" height="270" controls>
           <source src="/Videos/video.mp4" type="video/mp4"/>
         </video>
         {/* <button id="capture-screenshot" onClick={captureScreenshot}>Capture DisplayMedia Screenshot</button> */}
