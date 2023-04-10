@@ -21,6 +21,7 @@ export default function HtmlToCanvas() {
 
   return (
     <div>
+      <h5>HTML to Canvas</h5>
       <button onClick={handleCapture}>Capture by html2canvas</button>
     </div>
   )
